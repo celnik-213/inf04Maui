@@ -4,18 +4,30 @@
              x:Class="MauiApp1.NewPage1"
              Title="NewPage1">
     <VerticalStackLayout>
+        <Label
+            Text="Kalkulator powitań"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="32"/>
         <Label 
             Text=""
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            x:Name="Tekst"/>
+            x:Name="Tekst"
+            FontSize="25"/>
         <Entry
             x:Name="poleMiasto"
-            Placeholder="Wpisz swoje miasto"/>
+            Placeholder="Wpisz swoje miasto"
+            Margin="15"/>
+        <Entry
+            x:Name="poleImie"
+            Placeholder="Wpisz swoje imie"
+            Margin="15"/>
         <Button
+            Margin="15"
             Text="Pokaż"
             x:Name="Przycisk"
-            Clicked="OnImieClicked"
+            Clicked="OnPokazClicked"
             />
     </VerticalStackLayout>
 </ContentPage>
