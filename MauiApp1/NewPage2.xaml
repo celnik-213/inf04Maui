@@ -23,12 +23,12 @@
                 Grid.Column="0"/>
             <Entry
                 x:Name="Produkt"
-                Placeholder="Podaj nazwe produktu"
+                Placeholder="Podaj nazwę produktu"
                 Grid.Row="0"
                 Grid.Column="1"/>
             <Entry
                 x:Name="Ilosc"
-                Placeholder="Podaj ilosc"
+                Placeholder="Podaj ilość"
                 Grid.Row="1"
                 Grid.Column="1"/>
             <Entry
