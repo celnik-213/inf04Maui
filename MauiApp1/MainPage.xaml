@@ -20,7 +20,7 @@
                 HorizontalOptions="Fill"/>
             <Button
                 x:Name="Reset"
-                Text="Resetur"
+                Text="Resetuj"
                 Clicked="OnResetWordClicked"
                 HorizontalOptions="Fill"/>
             <Label

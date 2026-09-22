@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage3"
+             Title="NewPage3">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Label 
+            Text="Formularz"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            Placeholder="Podaj swoje imie i nazwisko"
+            x:Name="Imie"/>
+        <HorizontalStackLayout>
+            <Label Margin="10"
+                Text="Posiadam podstawową wiedzę"/>
+            <CheckBox
+           x:Name="Wiedza"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                Text="Chcę otrzymać certyfiakt"/>
+            <Switch
+                x:Name="Certyfikat"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5" RadioButtonGroup.GroupName="Kursy" x:Name="Kursy1">
+            <Label
+                Text="Formy kursu: "/>
+            <RadioButton Content="Stacjonarne" Value="Stacjonarne" x:Name="Stacjonarne"/>
+            <RadioButton Content="Online" Value="Online" x:Name="Online"/>
+            <RadioButton Content="Hybrydowe" Value="Hybrydowe" x:Name="Hybrydowe"/>
+        </HorizontalStackLayout>
+        <Editor
+            x:Name="Oczekiwania"
+            Placeholder="Wpisz swoje oczekiwania."/>
+        <Button
+            Text="Zapisz się"
+            x:Name="Zapisz"
+            Clicked="OnZapiszClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
