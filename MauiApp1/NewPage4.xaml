@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage4"
+             Title="NewPage4">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Picker WidthRequest="200"
+                x:Name="PickerSale">
+            <Picker.Items>
+                <x:String>Sala A</x:String>
+                <x:String>Sala B</x:String>
+                <x:String>Sala C</x:String>
+            </Picker.Items>
+        </Picker>
+        <HorizontalStackLayout>
+            <Label
+            Text="Osoby: 1"
+            x:Name="StepperValue"/>
+        <Stepper
+            ValueChanged="Stepper_ValueChanged"
+            Value="1"
+            Minimum="1"
+            Maximum="50"
+            x:Name="Stepper"/>
+        </HorizontalStackLayout>
+        <DatePicker
+            x:Name="Data"/>
+        <Button
+            Text="Zarezerwuj"
+            BackgroundColor="LightBlue"
+            Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
