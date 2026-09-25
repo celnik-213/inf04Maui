@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage6"
+             Title="NewPage6">
+    <VerticalStackLayout Padding="30" Spacing="15">
+
+
+        <Label x:Name="EtykietaKolor" 
+               Text="#000000" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               FontAttributes="Bold" />
+
+        <Label Text="Czerwony (R)" />
+        <Slider x:Name="SuwakR" 
+                Minimum="0" Maximum="255" Value="0" 
+                ValueChanged="SuwakValueChanged" />
+
+        <Label Text="Zielony (G)" />
+        <Slider x:Name="SuwakG" 
+                Minimum="0" Maximum="255" Value="0" 
+                ValueChanged="SuwakValueChanged" />
+
+        <Label Text="Niebieski (B)" />
+        <Slider x:Name="SuwakB" 
+                Minimum="0" Maximum="255" Value="0" 
+                ValueChanged="SuwakValueChanged" />
+        <Label
+            x:Name="Kolor"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"/>
+
+    </VerticalStackLayout>
+</ContentPage>
