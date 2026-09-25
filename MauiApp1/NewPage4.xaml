@@ -28,6 +28,6 @@
         <Button
             Text="Zarezerwuj"
             BackgroundColor="LightBlue"
-            Clicked="Button_Clicked"/>
+            Clicked="OnButtonClicked"/>
     </VerticalStackLayout>
 </ContentPage>
