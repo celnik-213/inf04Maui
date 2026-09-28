@@ -14,9 +14,7 @@ public partial class NewPage6 : ContentPage
         int g = (int)SuwakG.Value;
         int b = (int)SuwakB.Value;
 
-
         Kolor.Background = Color.FromRgb(r, g, b);
-
 
         string hexR = r.ToString("X2");
         string hexG = g.ToString("X2");

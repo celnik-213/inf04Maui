@@ -5,7 +5,6 @@
              Title="NewPage6">
     <VerticalStackLayout Padding="30" Spacing="15">
 
-
         <Label x:Name="EtykietaKolor" 
                Text="#000000" 
                FontSize="24" 
