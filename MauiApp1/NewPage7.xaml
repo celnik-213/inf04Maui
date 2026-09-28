@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage7"
+             Title="NewPage7">
+    <VerticalStackLayout Spacing="10">
+        <Label 
+            Text="Kalkulator pola prostokąta."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="32"/>
+        <Label 
+            Text="Podaj długość boku A:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="bokAEntry" 
+               Placeholder="Długość boku A" 
+               Keyboard="Numeric" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        <Label 
+            Text="Podaj długość boku B:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="bokBEntry" 
+               Placeholder="Długość boku B" 
+               Keyboard="Numeric" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        <Button
+        Text="Oblicz pole"
+            Clicked="ObliczPole_Clicked"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            Text="Wyczyść"
+            Clicked="Wyczysc_Clicked"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label
+            Text=""
+            x:Name="WynikLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
