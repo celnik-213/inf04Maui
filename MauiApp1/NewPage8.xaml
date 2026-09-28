@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage8"
+             Title="NewPage8">
+    <VerticalStackLayout>
+        <Label 
+            Text="Lista zakupów!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            Placeholder="Wprowadź nazwę produktu..."
+            x:Name="PoleZakupu"/>
+        <Button
+            Text="Dodaj"
+            Clicked="Dodaj_Clicked"/>
+        <Label
+            x:Name="EtykietaLicznik"
+            Text="Liczba produktów: 0"
+            FontSize="18"
+            HorizontalOptions="Center"/>
+        <CollectionView
+            x:Name="WidokListy"
+            SelectionMode="Single">
+            
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label
+                        Text="{Binding .}"
+                        FontSize="20"
+                        Padding="10"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button
+            Text="Usuń zaznaczony produkt"
+            Clicked="Usun_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
