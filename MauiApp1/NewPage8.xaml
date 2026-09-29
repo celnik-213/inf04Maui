@@ -9,7 +9,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Entry
-            Placeholder="Wprowadź nazwę produktu..."
+            Placeholder="Wprowadź nazwę produktu."
             x:Name="PoleZakupu"/>
         <Button
             Text="Dodaj"
