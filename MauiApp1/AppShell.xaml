@@ -67,6 +67,37 @@
    ContentTemplate="{DataTemplate local:NewPage9}"
    Route="NewPage9" />
         </Tab>
+        <Tab Title="Zadanie11">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:NewPage10}"
+                Route="NewPage10" />
+        </Tab>
+        <Tab Title="Zadanie12">
+            <ShellContent
+         Title="Home"
+         ContentTemplate="{DataTemplate local:NewPage11}"
+         Route="NewPage11" />
+        </Tab>
+        <Tab Title="Zadanie13">
+            <ShellContent
+  Title="Home"
+  ContentTemplate="{DataTemplate local:NewPage12}"
+  Route="NewPage12" />
+        </Tab>
+        <Tab Title="Zadanie14">
+            <ShellContent
+  Title="Home"
+  ContentTemplate="{DataTemplate local:NewPage13}"
+  Route="NewPage13" />
+        </Tab>
+        <Tab Title="Zadanie15">
+            <ShellContent
+Title="Home"
+ContentTemplate="{DataTemplate local:NewPage14}"
+Route="NewPage14" />
+        </Tab>
+
     </TabBar>
 
 </Shell>

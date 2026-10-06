@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage14"
+             Title="NewPage14">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+			BackgroundColor="Lavender">
+            <Label
+				Text="Kalkulator napiwku"
+				FontSize="24"
+				FontFamily="bold"
+			/>
+            <Label
+				Text="Kwota rachunku (zł):"
+				x:Name="BillPrice"
+				FontSize="18"
+			/>
+            <Entry
+				x:Name="BillAmount"
+				Keyboard="Numeric"
+			/>
+            <Label
+				Text="Ilosc osob:"
+				FontSize="18"
+			/>
+            <Entry
+				x:Name="NumberOfPeople"
+				Keyboard="Numeric"
+			/>
+            <RadioButton
+				x:Name="Tip10"
+				IsChecked="True"
+				Content="10%"
+				Value="0.10"
+				GroupName="TipPercentage"
+			/>
+            <RadioButton
+				x:Name="Tip15"
+				Content="15%"
+				Value="0.15"
+				GroupName="TipPercentage"
+			/>
+            <RadioButton
+				x:Name="Tip20"
+				Content="20%"
+				Value="0.20"
+				GroupName="TipPercentage"
+			/>
+            <RadioButton
+				x:Name="Tip25"
+				Content="25%"
+				Value="0.25"
+				GroupName="TipPercentage"
+			/>
+            <Button
+				Text="Oblicz napiwek"
+				Clicked="OnCalculateTipClicked"
+				BackgroundColor="MediumSeaGreen"
+			/>
+            <Label
+				x:Name="TipAmount"
+				Text="Napiwek: "
+				FontAttributes="Bold"
+				FontSize="18"
+			/>
+            <Label
+				x:Name="TotalAmount"
+				Text="Razem: "
+				FontAttributes="Bold"
+				FontSize="18"
+			/>
+            <Label
+				x:Name="WithPepole"
+				Text="Razem: "
+				FontAttributes="Bold"
+				FontSize="18"
+			/>
+            <Button
+				Text="Wyczyść"
+				Clicked="OnClearClicked"
+				BackgroundColor="IndianRed"
+			/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
